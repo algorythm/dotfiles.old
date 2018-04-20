@@ -18,7 +18,13 @@ fail () {
   exit
 }
 
-info "This is info"
-user "This is user"
-success "This is success"
-fail "This is fail"
+# info "This is info"
+# user "This is user"
+# success "This is success"
+# fail "This is fail"
+info "Linking files"
+./link_files.sh
+info "Adding source script to .bashrc"
+echo source ./dotfiles/source_files.sh >> ~/.bashrc
+
+success "Install complete"
