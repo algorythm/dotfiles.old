@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+if [ ! -x "$(command -v gpg)" ]; then
+    echo "GPG is not installed on your system. Please install before proceeding."
+    exit 1
+fi
+
+output="/tmp/gpg_output.log"
+
+gpg --full-generate-key > $output
+
+pub=`cat $output | grep "pub " | awk '{print $2}' | sed 's/.*\///'`
+sub=`cat $output | grep "pub " | awk '{print $2}' | sed 's/\/.*//'`
+
+# gpg -K $pub
+sec=`gpg -K $pub | grep $sub | grep sec | awk '{print $2}' | sed 's/.*\///'`
+# sec=`cat sec.txt | grep $sub | grep sec | awk '{print $2}' | sed 's/.*\///'`
+
+echo Public key: $pub
+echo Sub: $sub
+echo sec: $sec
+
+sleep 3
+
+gpg --armor --export $sec
+
