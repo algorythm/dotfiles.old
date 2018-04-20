@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-ln -s ./linkfiles/gitconfig ~/.gitconfig
-ln -s ./linkfiles/vimrc.basic ~/.vimrc
+ln -s ~/dotfiles/linkfiles/gitconfig ~/.gitconfig
+ln -s ~/dotfiles/linkfiles/vimrc.basic ~/.vimrc
 
