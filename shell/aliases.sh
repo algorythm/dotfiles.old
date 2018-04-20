@@ -15,7 +15,6 @@ alias gdd="git diff --color-words --ignore-space-change"
 alias pa="php artisan"
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=/$HOME"
 alias reload="source ~/.zshrc"
-alias vim="nvim"
 
 # For Mac:
 # alias rm="trash"
