@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source ./shell/aliases.sh
-source ./shell/bash_prompt.sh
-source ./shell/exports.sh
+source ~/dotfiles/shell/aliases.sh
+source ~/dotfiles/shell/bash_prompt.sh
+source ~/dotfiles/shell/exports.sh
 
