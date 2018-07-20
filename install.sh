@@ -25,6 +25,6 @@ fail () {
 info "Linking files"
 ./link_files.sh
 info "Adding source script to .bashrc"
-echo source ./dotfiles/source_files.sh >> ~/.bashrc
+echo source ~/dotfiles/source_files.sh >> ~/.bashrc
 
 success "Install complete"
