@@ -26,9 +26,9 @@
     dd = diff --color-words --ignore-space-change
     p = push
     po = push -u origin
-    publish = "!git push -u origin :$(git branch-name)"
     aac = !git add -Av && git commit
     branch-name = "!git rev-parse --abbrev-ref HEAD"
+    publish = "!git push -u origin :$(git branch-name)"
 
 [merge]
     tool = intellij
