@@ -27,4 +27,6 @@ info "Linking files"
 info "Adding source script to .bashrc"
 echo source ~/dotfiles/source_files.sh >> ~/.bashrc
 
+info "Sourcing .bashrc"
+source ~/.bashrc
 success "Install complete"
