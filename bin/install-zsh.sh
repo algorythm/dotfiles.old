@@ -15,6 +15,6 @@ sudo -s 'echo $(which zsh) >> /etc/shells' && chsh -s $(which zsh)
 echo "Installing oh-my-zsh..."
 
 [[ -x "$(command -v curl)" ]] && sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-[[ -x "$(command -v wget)" ]] && sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+# [[ -x "$(command -v wget)" ]] && sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 echo "Done!"
